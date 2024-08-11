@@ -1,18 +1,23 @@
 # Sailing Downstream
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KernelTurtle/sailing_downstream/javascript_testing.yml?branch=main&label=JavaScript%20Tests&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KernelTurtle/sailing_downstream/ocaml_testing.yml?branch=main&label=OCaml%20Tests&style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/KernelTurtle/sailing_downstream/python_testing.yml?branch=main&label=Python%20Tests&style=flat-square)
 
 Welcome to the **Sailing Downstream** repository! This repository contains various tasks meant for mentorship purposes, covering different programming languages and tools. Below you will find instructions on how to set up, run, and test each task.
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Tasks](#tasks)
-  - [JavaScript Task](#javascript-task)
-  - [OCaml Task](#ocaml-task)
-  - [Python Task](#python-task)
-- [Running Tests](#running-tests)
-- [Contributing](#contributing)
-- [License](#license)
+- [Sailing Downstream](#sailing-downstream)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Prerequisites](#prerequisites)
+  - [Tasks](#tasks)
+    - [JavaScript Task](#javascript-task)
+    - [OCaml Task](#ocaml-task)
+    - [Python Task](#python-task)
+  - [Running Tests](#running-tests)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Overview
 
