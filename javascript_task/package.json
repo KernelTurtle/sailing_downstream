@@ -10,7 +10,6 @@
     "lint:fix": "npx eslint . --fix",
     "prettier:check": "npx prettier --check .",
     "prettier:fix": "npx prettier --write .",
-    "prepare": "npm install",
     "clean": "rm -rf dist coverage node_modules"
   },
   "author": "Keys",

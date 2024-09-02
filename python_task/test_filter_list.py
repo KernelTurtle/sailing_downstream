@@ -81,7 +81,8 @@ class TestFilterList(unittest.TestCase):
         This test checks the function with a list containing large integers
         to ensure it handles larger values correctly.
         """
-        input_list = [1000000001, 1000000002, 1000000003, 1000000004, 1000000005, 1000000006, 1000000007, 1000000008, 1000000009, 1000000010]
+        input_list = [1000000001, 1000000002, 1000000003, 1000000004, 1000000005,
+                      1000000006, 1000000007, 1000000008, 1000000009, 1000000010]
         result = filter_list(input_list)
         expected_result = [1000000001, 1000000005, 1000000007]
         self.assertEqual(result, expected_result)
