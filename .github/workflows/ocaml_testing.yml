@@ -28,6 +28,7 @@ jobs:
         run: |
          opam install -y dune alcotest
          sudo apt install ocaml dune
+         dune clean
 
       - name: Build and run tests
         run: dune runtest
