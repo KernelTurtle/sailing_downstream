@@ -1,7 +1,6 @@
 const processList = require('./main');
 
 describe('processList Function Tests', () => {
-
   test('Valid input list of length 20', () => {
     const inputList = Array.from({ length: 20 }, (_, index) => index + 1);
     const result = processList(inputList);
@@ -10,7 +9,9 @@ describe('processList Function Tests', () => {
 
   test('Invalid input list length', () => {
     const inputList = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-    expect(() => processList(inputList)).toThrow('List length must be a multiple of 10');
+    expect(() => processList(inputList)).toThrow(
+      'List length must be a multiple of 10'
+    );
   });
 
   test('Non-array input', () => {
@@ -19,7 +20,8 @@ describe('processList Function Tests', () => {
 
   test('Input list contains non-numeric values', () => {
     const inputList = [1, 2, 3, 'four', 5, 6, 7, 8, 9, 10];
-    expect(() => processList(inputList)).toThrow('All elements in the list must be numbers');
+    expect(() => processList(inputList)).toThrow(
+      'All elements in the list must be numbers'
+    );
   });
-
 });

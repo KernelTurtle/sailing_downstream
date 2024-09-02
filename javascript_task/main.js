@@ -4,7 +4,9 @@
  * @returns {Array<number>} - Modified list with items removed.
  */
 function removeMultiples(inputList) {
-  return inputList.filter((_, index) => (index + 1) % 2 !== 0 && (index + 1) % 3 !== 0);
+  return inputList.filter(
+    (_, index) => (index + 1) % 2 !== 0 && (index + 1) % 3 !== 0
+  );
 }
 
 /**

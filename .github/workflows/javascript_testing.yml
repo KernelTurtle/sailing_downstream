@@ -30,6 +30,7 @@ jobs:
       - name: Install dependencies
         run: |
           cd javascript_task/javascript_task 
+          npm run clean
           npm install
 
       - name: Run lint and tests
