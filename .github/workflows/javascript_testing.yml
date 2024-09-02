@@ -31,10 +31,10 @@ jobs:
       - name: Install dependencies
         run: |
           cd javascript_task
-          if [ ! -f package-lock.json ]; then
-            npm install
-          else
+          if [ -f package-lock.json ]; then
             npm ci
+          else
+            npm install
           fi
 
       - name: Run lint and tests
