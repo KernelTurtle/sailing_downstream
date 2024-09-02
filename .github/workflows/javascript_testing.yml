@@ -29,7 +29,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd javascript_task
+          cd javascript_task/javascript_task 
           if [ -f package-lock.json ]; then
             npm ci
           else
@@ -38,11 +38,11 @@ jobs:
 
       - name: Run lint and tests
         run: |
-          cd javascript_task
+          cd javascript_task/javascript_task 
           npm run lint
           npm test
 
       - name: Check Prettier formatting
         run: |
-          cd javascript_task
+          cd javascript_task/javascript_task 
           npm run prettier:check
