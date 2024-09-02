@@ -20,19 +20,26 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
         with:
-          path: 'javascript_task'  # Set the working directory
+          path: 'javascript_task'
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+          cache: 'npm'  # Cache Node.js dependencies
 
       - name: Install dependencies
         run: |
-          cd javascript_task/javascript_task
-          npm install --save-dev jest
+          cd javascript_task
+          npm install
 
-      - name: Run tests
+      - name: Run lint and tests
         run: |
-          cd javascript_task/javascript_task  # Change directory to the working directory
+          cd javascript_task
+          npm run lint
           npm test
+
+      - name: Check Prettier formatting
+        run: |
+          cd javascript_task
+          npm run prettier:check
